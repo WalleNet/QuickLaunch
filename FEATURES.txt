@@ -1,0 +1,23 @@
+Exit without launching a program
+Type 'exit' and press enter.
+
+Google Search
+Type 'g' and then the search query.
+ex: g how many miles from the earth to the sun
+
+Youtube Search
+Type 'yt' and then the search query.
+ex: yt how to build a python program
+
+Calculations
+type a single operator calculation using +,-,/,*
+ex: 1+2 , 1-2 , 1*2 , 1/2, etc.
+
+File Explorer
+Type 'explorer' and press enter
+
+Website
+Type a web adress and press enter
+* Launches in browser specified by config.py
+** Only works with .com, .net, .org, or .io
+*** Does not work with slashes (wallenet.net/developers)
