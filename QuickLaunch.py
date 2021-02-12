@@ -4,7 +4,7 @@ from config import *
 from tkinter import *
 import subprocess
 
-
+f = open("QL-savedata.txt","w")
 
 def call(event=""): # Decide what to do with current typed text
     data = e.get().lower();
