@@ -1,7 +1,7 @@
 # QuickLaunch
 QuickLaunch is a simple program that allows you to find and launch programs with a keyboard shortcut. Just add the programs to the config file and launch away!
 
-QuickLaunch (4.0.0) by WalleNet
+QuickLaunch (5.1) by WalleNet
 All Rights Reserved
 
 *All steps not marked '(OPTIONAL)' are crucial to the function of the program and should not be omitted.
@@ -35,6 +35,7 @@ and 'extras', respectively.
 1. Open a terminal window and navigate to the 'QuickLaunch' folder (containing 'config.py','QuickLaunch.py',etc.)
 2. Run the command 'pyinstaller -w --onedir QuickLaunch.py'
 3. After the sequence finishes, you will see some additional folders. The .exe is located in the 'Dist' folder.
+4. If it doesn't already exist, create a blank .txt file named 'QL-savedata.txt' in the 'Dist' folder.
 
 #### CREATING A KEY-BINDING (OPTIONAL, RECOMMENDED) ####
 1. In the 'Dist' folder, right-click the .exe and create a shortcut
