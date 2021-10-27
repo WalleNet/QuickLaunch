@@ -15,9 +15,3 @@ ex: 1+2 , 1-2 , 1*2 , 1/2, etc.
 
 File Explorer
 Type 'explorer' and press enter
-
-Website
-Type a web adress and press enter
-* Launches in browser specified by config.py
-** Only works with .com, .net, .org, or .io
-*** Does not work with slashes (wallenet.net/developers)
