@@ -1,7 +1,7 @@
 # QuickLaunch
 QuickLaunch is a simple program that allows you to find and launch programs with a keyboard shortcut. Just add the programs to the config file and launch away!
 
-QuickLaunch (5.1) by WalleNet
+QuickLaunch (6.0) by WalleNet
 All Rights Reserved
 
 *All steps not marked '(OPTIONAL)' are crucial to the function of the program and should not be omitted.
