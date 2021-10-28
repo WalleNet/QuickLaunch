@@ -4,8 +4,7 @@ QuickLaunch is a simple program that allows you to find and launch programs with
 QuickLaunch (6.0.0) by WalleNet
 All Rights Reserved
 
-*All steps not marked '(OPTIONAL)' are crucial to the function of the program and should not be omitted.
-**To see all available features, see 'FEATURES.txt' in main directory.
+_All steps not marked '(OPTIONAL)' are crucial to the function of the program and should not be omitted._
 
 ## Required Modules (Installable via PIP or PIP3)
 PROGRAM WILL NOT RUN WITHOUT THE FOLLOWING MODULES:
