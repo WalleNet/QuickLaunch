@@ -24,7 +24,7 @@ Other modules (built-in with Python 3.*)
 Visit http://wallenet.net/quicklaunch#how-it-works
 
 ## Installation
-1. Open a terminal window and navigate to the 'QuickLaunch' folder (containing 'config.py','QuickLaunch.py',etc.)
+1. Open a terminal window and navigate to the 'QuickLaunch' folder (containing 'QuickLaunch.py')
 2. Run the command `pyinstaller -w --onedir QuickLaunch.py`
 3. After the sequence finishes, you will see some additional folders. The .exe is located in the 'Dist' folder.
 4. Move the logo.png file from the main folder to the folder with the .exe.
