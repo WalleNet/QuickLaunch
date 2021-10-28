@@ -9,16 +9,16 @@ All Rights Reserved
 
 # REQUIRED MODULES (Installable via PIP or PIP3)
 PROGRAM WILL NOT RUN WITHOUT THE FOLLOWING MODULES:
--tkinter
--webbrowser
--pyinstaller
--PIL
--tkinter.messagebox
--easygui
--pickle
+1. tkinter
+2. webbrowser
+3. pyinstaller
+4. PIL
+5. tkinter.messagebox
+6. easygui
+7. pickle
 Other modules (built-in with Python 3.*)
--os
--subprocess
+1. os
+2. subprocess
 
 # INITIAL SETUP
 Visit http://wallenet.net/QuickLaunch#how-it-works
