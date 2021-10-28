@@ -43,19 +43,16 @@ Besides just launching programs, QuickLaunch can also do a few more things.
 Type 'exit' and press enter.
 
 ### Google Search
-Type 'g' and then the search query.\n
-ex: g how many miles from the earth to the sun
+Type 'g' and then the search query. _Example: g how many miles from the earth to the sun_
 
 ### Youtube Search
-Type 'yt' and then the search query.\n
-ex: yt how to build a python program
+Type 'yt' and then the search query. _Example: yt how to build a python program_
 
 ### Calculations
-Type a single operator calculation using +,-,/,*\n
-ex: 1+2 , 1-2 , 1\*2 , 1/2, etc.
+Type a single operator calculation. _Example: 1+2 , 1-2 , 1\*2 , 1/2_
 
 ### File Explorer
-Type 'explorer' and press enter
+Type 'explorer' and press enter.
 
 
 ## Thank you
