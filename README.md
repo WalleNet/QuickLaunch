@@ -21,7 +21,7 @@ Other modules (built-in with Python 3.*)
 2. subprocess
 
 # INITIAL SETUP
-Visit http://wallenet.net/QuickLaunch#how-it-works
+Visit http://wallenet.net/quicklaunch#how-it-works
 
 # INSTALL AS APPLICATION (.EXE)
 1. Open a terminal window and navigate to the 'QuickLaunch' folder (containing 'config.py','QuickLaunch.py',etc.)
