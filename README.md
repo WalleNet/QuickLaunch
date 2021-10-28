@@ -36,6 +36,28 @@ Visit http://wallenet.net/quicklaunch#how-it-works
 3. You can type a key-binding under 'Shortcut', but it is faster to pin it to your taskbar.
 4. Move it to the very left of the taskbar. Now pressing Win+1 will launch the program much faster.
 
+# Additional Features
+Besides just launching programs, QuickLaunch can also do a few more things.
+
+### Exit without launching a program
+Type 'exit' and press enter.
+
+### Google Search
+Type 'g' and then the search query.
+ex: g how many miles from the earth to the sun
+
+### Youtube Search
+Type 'yt' and then the search query.
+ex: yt how to build a python program
+
+### Calculations
+Type a single operator calculation using +,-,/,*
+ex: 1+2 , 1-2 , 1\*2 , 1/2, etc.
+
+### File Explorer
+Type 'explorer' and press enter
+
+
 ## Thank you
 Thank you for using QuickLaunch.
 For Questions, email us at rohand.wallenet@gmail.com
