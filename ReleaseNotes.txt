@@ -1,0 +1,6 @@
+QuickLaunch v6.1.1 Release Notes
+October 29th 2021
+Developed in Austin, Texas, USA by Rohan Dharwadker
+Version 6 initial development start: 10/12/2021
+
+(NEW) Press Ctrl to fill the main entry with the alternate program

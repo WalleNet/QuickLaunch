@@ -14,7 +14,7 @@ BACKGROUND_MAIN = "#303030"
 BACKGROUND_ALT = "#292929"
 BACKGROUND_2ALT = "#252525"
 DEBUG_MODE = True
-VERSION = "6.0.0"
+VERSION = "6.1.1"
 VERSION_INFO = "QuickLaunch (v"+VERSION+") by WalleNet"
 
 
@@ -434,6 +434,18 @@ def autofill(event=""): # Autofill to any programs or extras when any key is pre
             altProgram.configure(text=p)
         else:
             altProgram.configure(text="")
+            debug("no programs with exact match. looking for other loosely related programs...")
+            programlistsorted = sorted(programlist,key=len)
+            programlistsorted.reverse()
+            for program in programlistsorted:
+                debug(program)
+                if (currenttext in program):
+                    try:
+                        if (program != p):
+                            altProgram.configure(text=program)
+                    except UnboundLocalError as err:
+                        altProgram.configure(text=program)
+
 
 def open_settings(event=""): # opens the settings frame
     global in_settings
@@ -608,7 +620,7 @@ def toggle_hints(hintsButton):
         debug("show_hints turned OFF")
         save("QL-savedata-showHints.pickle",False)
     else:
-        hintsLabel.configure(text="[Return] Launch 1        [Shift-Return] Launch 2        [Alt-Return] Launch Recent")
+        hintsLabel.configure(text="[Return] Launch 1        [Shift-Return] Launch 2        [Alt-Return] Launch Recent        [Ctrl] Switch")
         hintsButton.configure(text="Hide Hints")
         debug("show_hints turned ON")
         save("QL-savedata-showHints.pickle",True)
@@ -638,10 +650,19 @@ def delete_save():
 
 def open_help():
     try:
-        webbrowser.get(browser_path).open("http://wallenet.net/QuickLaunch#how-it-works")
+        webbrowser.get(browser_path).open("http://wallenet.net/quicklaunch#how-it-works")
         quit()
     except IndexError:
         tkmsg.showinfo(title=" Notice",message=" Please select a browser first.")
+
+def fill_main_with_alt(event=""):
+    if (not in_settings):
+        alt_program_text = altProgram.cget("text")
+        if len(alt_program_text) > 0:
+            e.delete(0,END)
+            e.insert(0,alt_program_text)
+            autofill()
+            
 """
 
 ------------------------------------- Main Program Starts Here -------------------------------------
@@ -722,7 +743,7 @@ altProgram = Label(mainFrame,text="",anchor="w",width=32,font="Bahnschrift 24",b
 altProgram.place(anchor="n",relx=0.5,rely=0.27)
 
 # Create hints label
-hintsLabel=Label(mainFrame,text="[Return] Launch 1        [Shift-Return] Launch 2        [Alt-Return] Launch Recent",font="Bahnschrift 8",bg="#303030",fg="#ffffff",bd=10)
+hintsLabel=Label(mainFrame,text="[Return] Launch 1        [Shift-Return] Launch 2        [Alt-Return] Launch Recent        [Ctrl] Switch",font="Bahnschrift 8",bg="#303030",fg="#ffffff",bd=10)
 if (not show_hints):
     hintsLabel.configure(text=VERSION_INFO)
 hintsLabel.place(anchor="center",relx=0.5,rely=0.65)
@@ -742,14 +763,17 @@ settings_image = PhotoImage(file="logo.png")
 settingsButton = Button(mainFrame,image=settings_image,bg=BACKGROUND_ALT,activebackground=BACKGROUND_ALT,bd=0,command=open_settings)
 settingsButton.place(anchor="se",relx=1,rely=1)
 
-# Call the 'callAlt' function when <Alt> is pressed
+# Call the 'callAlt' function when <Shift-Return> is pressed
 root.bind('<Shift-Return>',alt_call)
 
-# Call the 'callLast' function when <Tab> is pressed
+# Call the 'callLast' function when <Alt-Return> is pressed
 root.bind('<Alt-Return>',last_call)
 
 # Call the 'call' function when <Return> is pressed
 root.bind('<Return>',call)
+
+# Call the 'fill_main_with_alt' function when <Ctrl> is pressed
+root.bind('<Control_L>',fill_main_with_alt)
 
 # Call the 'autofill' function when any key in 'keys' is pressed
 keys="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-"
