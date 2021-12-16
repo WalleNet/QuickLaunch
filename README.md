@@ -4,7 +4,7 @@ QuickLaunch is a simple program that allows you to find and launch programs with
 QuickLaunch (6.0.0) by WalleNet
 All Rights Reserved
 
-### Instructions are no longer available here.
+## Instructions are no longer available here.
 For full installation instructions and other tips/tricks: 
 Visit http://wallenet.net/quicklaunch
 
