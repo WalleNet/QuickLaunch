@@ -4,30 +4,9 @@ QuickLaunch is a simple program that allows you to find and launch programs with
 QuickLaunch (6.0.0) by WalleNet
 All Rights Reserved
 
-_All steps not marked '(OPTIONAL)' are crucial to the function of the program and should not be omitted._
-
-## Required Modules (Installable via PIP or PIP3)
-PROGRAM WILL NOT RUN WITHOUT THE FOLLOWING MODULES:
-1. tkinter
-2. webbrowser
-3. pyinstaller
-4. PIL
-5. tkinter.messagebox
-6. easygui
-7. pickle
-Other modules (built-in with Python 3.*)
-1. os
-2. subprocess
-
-## Setup
-Visit http://wallenet.net/quicklaunch#how-it-works
-
-## Installation
-1. Open a terminal window and navigate to the 'QuickLaunch' folder (containing 'QuickLaunch.py')
-2. Run the command `pyinstaller -w --onedir QuickLaunch.py`
-3. After the sequence finishes, you will see some additional folders. The .exe is located in the 'Dist' folder.
-4. Move the logo.png file from the main folder to the folder with the .exe.
-5. For more info visit http://wallenet.net/quicklaunch#installation-instructions
+### Instructions are no longer available here.
+For full installation instructions and other tips/tricks: 
+Visit http://wallenet.net/quicklaunch
 
 ## Creating a key binding (Optional, recommended)
 1. In the 'Dist' folder, right-click the .exe and create a shortcut
